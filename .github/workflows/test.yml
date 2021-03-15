@@ -15,8 +15,7 @@ jobs:
       - shell: bash
         run: |
           mvn -B package --file pom.xml
-          java -version && javac -version && mvn -v
-          tree -a
+          echo "Build Project"
           mvn compile
           echo "Run Junit"
           mvn test
